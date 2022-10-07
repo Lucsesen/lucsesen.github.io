@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade formulário</title>
+</head>
+<body>
+    <h1>Aulas de Hipermidia</h1>
+    <br>
+    <h2>Preencha o formulário abaixo</h2><br><br>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome">
+            &nbsp;
+            <label for="Sobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="sobrenome">
+        </div>
+        <br>
+        <div>
+            <label for="Nascimento">Nascimento: </label>
+            <input type="date" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="rg">RG: </label>
+            <input type="text" id="text" name="rg" maxlength="9">
+        </div>
+        <br>
+        <div>
+            <label for="cpf">CPF: </label>
+            <input type="text" name="cpf1" maxlength="9"> - <input type="text" name="cpf2" maxlength="2">
+        </div>
+        <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Dados do Endereço</legend>
+        <div>
+            <label for="rua">Rua: </label>
+            <input type="text" name="rua" id="rua"> &nbsp;
+            <label for="numero">Número: </label>
+            <input type="text" name="numero" id="numero">
+        </div>
+        <br>
+        <div>
+            <label for="bairro">Bairro: </label>
+            <input type="text" name="bairro" id="bairro">
+        </div>
+        <br>
+        <div>
+            <label for="estado">Estado: </label>
+            <select name="estado" id="estado">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="cidade">Cidade: </label>
+            <input type="text" name="cidade" id="cidade">
+        </div>
+        <br>
+        <div>
+            <label for="cep">CEP: </label>
+            <input type="text" name="cep1" maxlength="5"> - <input type="text" name="cep2" maxlength="3">
+        </div>
+        <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Dados de Login</legend>
+        <div>
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label for="imagemPerfil">Imagem de Perfil</label>
+            <input type="file" id="imagemPerfil" name="imagemPerfil" accept="image/png, image/jpeg">
+        </div>
+        <br>
+        <div>
+            <label for="usuario">Login de usuário: </label>
+            <input type="text" name="usuario" id="usuario">
+        </div>
+        <br>
+        <div>
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" name="senha">
+        </div>
+        <br>
+        <div>
+            <label for="senha">Confirme a senha: </label>
+            <input type="password" id="senha" name="senha">
+        </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Pesquisa de interesse: </legend>
+        <div style="display: flex; align-items: center;">
+            <label for="webmaster">Você deseja trabalhar como Webmaster?</label>
+            <div style="margin-left: 20px;" >
+                <div><input type="radio" name="webmaster" value="sim">Sim <br></div>
+                <div><input type="radio" name="webmaster" value="nao">Não <br></div>
+                <div><input type="radio" name="webmaster" value="talvez">Talvez <br></div>
+                <div><input type="radio" name="webmaster" value="quem-sabe">Quem sabe <br></div>                                                          
+            </div>
+        </div>
+        <br>
+        
+        <div style="display: flex; align-items: center;">
+            <label for="aprendizado">O que você deseja aprender? </label>
+            <div style="margin-left: 95px;">
+                <div><input type="radio" name="aprendizado" value="html">HTML <br></div>
+                <div><input type="radio" name="aprendizado" value="css">CSS <br></div>
+                <div><input type="radio" name="aprendizado" value="Javascript">Javascript <br></div>
+                <div><input type="radio" name="aprendizado" value="django">Django <br></div>
+            </div>
+        </div>
+        <br>
+        <div style="display: flex; align-items: center;">
+            <label for="comentarios">Deixe seu comentário: </label>
+            <div style="margin-left: 140px;">
+                <div><textarea name="comentario" id="comentario" cols="20" rows="10"></textarea></div>
+            </div>
+        </div>
+    </fieldset>
+    <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    <br><br><br><br><br><br>
+    <a href="../../sumario_listas.html">Retornar para o Sumario</a>
+</body>
+</html>
