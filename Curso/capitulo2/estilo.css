@@ -1,0 +1,29 @@
+main {
+    background-image: url(https://img.freepik.com/vetores-premium/fundo-moderno-abstrato-com-cor-pastel-gradiente-branco-cinza-e-elemento-de-formato-quadrado_8221-1146.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    
+}
+article p{
+    background-color:gainsboro;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    text-align: center;
+    color: red;
+}
+
+.lorem1 {
+    color:cornflowerblue;
+    font-family: 'Noto Sans Mono', monospace;
+}
+li a:link { color: darkgreen } 
+li a:visited { color: maroon } 
+li a:hover { color: yellow } 
+li a:active { color: blue }
+
+li::before{
+    content: "\279D";
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@900&display=swap');
+
