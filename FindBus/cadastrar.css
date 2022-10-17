@@ -1,0 +1,47 @@
+body{
+    background-color: #77BABE;
+    margin-left: 2%;
+}
+
+h1 { font-family: Verdana, Geneva, Tahoma, sans-serif, Times, "Times New Roman", serif; font-size: 24px; font-style: normal; color: #4D4D4D; margin-left: 12px;}
+h2 { font-family: Verdana, Geneva, Tahoma, sans-serif, Times, "Times New Roman", serif; font-size: 18px; font-style: normal; color: #4D4D4D; margin-left: 18px;}
+label { font-family: Verdana, Geneva, Tahoma, sans-serif, Times, "Times New Roman", serif; font-size: 12px;font-weight: bold ;font-style: normal; color: #4D4D4D;}
+.campo { width: 180px; height: 28px;}
+
+
+.botaoCadastrar{
+    background: #EC7458;
+    color: white;
+    border-style: outset;
+    border-color: #77BABE;
+    height: 28px;
+    width: 180px;
+    font: bold15px Verdana,sans-serif;
+    text-shadow: none;  
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.botaoCadastrar2{
+    background: #EC7458;
+    color: white;
+    border-style: outset;
+    border-color: #77BABE;
+    height: 28px;
+    width: 200px;
+    font: bold15px Verdana,sans-serif;
+    text-shadow: none;  
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.check{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, "Times New Roman", serif; font-size: 9px;font-weight: bold ;font-style: normal; color: #4D4D4D;
+}
+
+.rodape{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 7px; font-weight: bold;font-style: normal; color: #4D4D4D;
+}
+
