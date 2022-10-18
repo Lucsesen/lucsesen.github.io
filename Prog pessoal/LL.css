@@ -1,0 +1,13 @@
+body{
+    background-color: #e3adbd;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+legend {
+    color: white;
+}
+p {
+    color: white;
+}
+
