@@ -1,0 +1,57 @@
+body{
+    background-color: #77BABE;
+    margin: 0;
+}
+div{
+    position: fixed;
+}
+
+.iframe{
+    border: black solid 2px;
+}
+
+.linha{
+    position: relative;
+    top: 20px;
+    left: 10px;   
+    flex-direction: column;
+}
+
+.coluna{
+    position: relative;
+    left: 40px;
+}
+
+.laranja{
+    background-color: #EC7458;
+    top: 73px;
+    left: 2px;
+    width: 400px;
+    height: 40px;
+    background-image:url("gps.png");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: 10px;
+
+}
+
+.campo{
+    display: flex;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #898989;
+    margin: 10px 10px 10px 60px;
+    width: 280px;
+}
+
+.lupa{
+    border: 0;
+    width: 35px;
+    height: 40px;
+    background-color: #EC7458;
+    background-image: url("lupa.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
