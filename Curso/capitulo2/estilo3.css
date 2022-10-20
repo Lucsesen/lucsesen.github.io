@@ -1,0 +1,74 @@
+.conteiner{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'nav content'
+    'footer footer'
+    ;
+    grid-template-columns: 10% auto;
+}
+
+p{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+#header{
+    grid-area: header;
+    height: 8vh;
+    background-color: grey;
+    color: white;
+}
+
+#nav{
+    grid-area: nav;
+    height: 50vh;
+}
+
+#content{
+    grid-area: content;
+    height: 50vh;
+    width: auto;
+    border-left: 1px solid black;
+}
+#content h3{
+    margin-left: 15px;
+}
+
+#footer{
+    grid-area: footer;
+    height: 2vh;
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    font-size: 12px;
+}
+
+#listaVertical {
+    width: 120px;
+    height: 10px;
+}
+
+#listaVertical ul{
+    flex-direction: column;
+}
+
+nav li{
+    background-color: silver;
+}
+
+nav ul {
+    list-style: none;
+    display:flex
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+nav li:hover{
+    background: url('Sprite_g.jpg');
+}
