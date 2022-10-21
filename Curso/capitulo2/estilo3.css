@@ -51,6 +51,7 @@ p{
 
 #listaVertical ul{
     flex-direction: column;
+    margin-left: 1px;
 }
 
 nav li{
