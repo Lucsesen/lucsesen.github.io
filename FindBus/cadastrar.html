@@ -17,7 +17,7 @@
         <br>
         <div>
             <label for="endereco">Endereço</label><br>
-            <input class="campo" type="text" name="endereco" placeholder="Avenidade 28 de Março, 550">
+            <input class="campo" type="text" name="endereco" id="end" placeholder="Avenidade 28 de Março, 550">
         </div>
         <br>
         <div>
@@ -32,12 +32,12 @@
         <br>
         <div>
             <label for="senha">Senha</label><br>
-            <input class="campo" type="password" name="senha" placeholder="********">
+            <input class="campo" type="password" id="senha" name="senha" placeholder="********">
         </div>
         <br>
         <div>
             <label for="check"></label>
-            <div style="max-width: 197px; display: flex; align-items: center;" class="check"><input type="checkbox" name="check">Estou ciente e permito a coleta dos meus dados pessoais.</div>
+            <div style="max-width: 197px; display: flex; align-items: center;" class="check"><input type="checkbox" id="check" name="check">Estou ciente e permito a coleta dos meus dados pessoais.</div>
         </div>
         <br>
         <div>
@@ -91,5 +91,4 @@
         senha.addEventListener('change', verificaTudo);
     })()
 </script>
-    
 </html>
