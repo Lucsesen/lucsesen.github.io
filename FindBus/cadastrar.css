@@ -20,7 +20,11 @@ label { font-family: Verdana, Geneva, Tahoma, sans-serif, Times, "Times New Roma
     text-shadow: none;  
     font-weight: bold;
     cursor: pointer;
-
+    
+}
+.disabled{
+    background: gray;
+    opacity: 4;
 }
 
 .botaoCadastrar2{
