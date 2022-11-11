@@ -54,6 +54,9 @@
         const telefone = document.getElementById ('tel');
         const email = document.getElementById ('email');
         const btn = document.getElementById ('btn');
+        const end = document.getElementById('end');
+        const senha = document.getElementById('senha');
+        const check = document.getElementById('check');
 
         const verificaNome = () => {
             const padraoNome = /[a-z ]{3,}/i; 
@@ -69,7 +72,7 @@
         }
 
         const verificaTudo = () => {
-            if(verificaNome() && verificaTel() && verificaEmail()) {
+            if(verificaNome() && verificaTel() && verificaEmail() && (end.value.length > 0) && (senha.value.length > 0) && check.checked ) {
                 btn.classList.remove('disabled');
                 btn.disabled = false;
             } else{
@@ -83,6 +86,10 @@
         nome.addEventListener('change', verificaTudo)
         telefone.addEventListener('change', verificaTudo);
         email.addEventListener('change', verificaTudo);
+        end.addEventListener('change', verificaTudo);
+        check.addEventListener('change', verificaTudo);
+        senha.addEventListener('change', verificaTudo);
     })()
 </script>
+    
 </html>
