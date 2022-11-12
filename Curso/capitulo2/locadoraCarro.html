@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora de carros</title>
+</head>
+<body>
+    <form action="#">
+        <div>
+            <label for="nome">Digite o seu nome</label>
+            <input class="campo" type="text" name="nome" id="nome" placeholder="Lucas Rangel">
+        </div> <br>
+        <div>
+            <label for="tel">Digite o seu telefone</label>
+            <input class="campo" type="text" name="telefone" id="tel" placeholder="22999229861">
+        </div><br>
+        <div>
+            <label for="cidade_retirada">Digite a cidade em que deseja retirar o carro</label>
+            <select name="cidade_retirada" id="cidade_retirada">
+                <option value="campos">Campos dos goytacazes-RJ</option>
+                <option value="rio">Rio de Janeiro-RJ</option>
+                <option value="vitoria">Vitória-ES</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="cidade_entregue">Digite a cidade em que deseja entregar o carro</label>
+            <select name="cidade_entregue" id="cidade_entregue">
+                <option value="campos">Campos dos goytacazes-RJ</option>
+                <option value="rio">Rio de Janeiro-RJ</option>
+                <option value="vitoria">Vitória-ES</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="dataRetirada">Digite a data em que deseja retirar o carro (FORMATO YYYY-MM-DD)</label>
+            <input type="text" id="data_retirada" placeholder="2022-11-11">
+        </div>
+        <div><br>
+            <label for="dataEntrega">Digite a data em que deseja devolver o carro (FORMATO YYYY-MM-DD)</label>
+            <input type="text" id="data_entrega" placeholder="2022-11-11">
+        </div>
+        <div><br>
+            <label for="tipoCarro">Selecione o tipo de carro que deseja</label>
+            <select name="tipoCarro" id="tipo_carro">
+                <option value="basico">Básico (R$ 119,00)</option>
+                <option value="basicoAr">Básico com Ar (R$ 199,00)</option>
+                <option value="executivo">Executivo(R$ 299,00)</option>
+            </select>
+        </div><br>
+        <input type='button' name='botao' id="botao" onclick="calcularPreco()" value='Calcular valor da locação'>
+    </form>
+
+    <script>
+        const calcularPreco = () => {
+                const nome = document.getElementById ('nome');
+                const telefone = document.getElementById ('tel');
+                const cidadeRetirada = document.getElementById ('cidade_retirada');
+                const cidadeEntregue = document.getElementById ('cidade_entregue');
+                const dataRetirada = document.querySelector('data_retirada');
+                const dataEntrega = document.querySelector('data_entrega');
+                const tipoCarro = document.getElementById('tipo_carro');
+                const diferencaData = new Date(dataEntrega) - new Date(dataRetirada);
+                const diferencaDias = diferencaData / (1000 * 60 * 60 * 24);
+
+                if (tipoCarro == 'basico'){
+                        const valorDiaria = diferencaDias * 119;
+                    }
+                    else if (tipoCarro == 'basicoAr'){
+                       const valorDiaria = diferencaDias * 199;
+                    } else {
+                        const valorDiaria = diferencaDias * 299;
+                    }
+                if (cidade_entregue = cidade_entregue){
+                    alert("A locação custará " +valorDiaria);
+                } else {
+                    const valorTotal = valorDiaria + 300;
+                    alert("A locação custará " +valorTotal);
+                }               
+                }
+    </script>
+
+
+</body>
+</html>
