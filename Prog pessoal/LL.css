@@ -6,7 +6,6 @@ header{
 }
 
 body{
-    background-color: #e3adbd;
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
     color: white;
@@ -17,6 +16,10 @@ h1 { font-size: 150
 }
 .LL1{
         background-color: #beb0d1;
+}
+
+.LL2{
+        background-color: #e3adbd;
 }
 
 .LL3{
@@ -48,7 +51,7 @@ header nav ul li a{
 header nav ul li.menu-dropdown ul{
     display: none;
     position: absolute;
-    margin-left: -8%;
+    margin-left: -7%;
 }
 
 header nav ul li.menu-dropdown:hover > ul {
