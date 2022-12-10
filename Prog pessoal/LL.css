@@ -15,10 +15,12 @@ body{
 h1 { font-size: 150
     color: white; font-weight: bold 
 }
+.LL1{
+        background-color: #beb0d1;
+}
 
 .LL3{
         background-color: #953131;
-        font-family: 'Times New Roman', Times, serif;
 }
 
 header nav{
