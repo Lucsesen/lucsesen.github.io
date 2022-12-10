@@ -57,3 +57,7 @@ header nav ul li.menu-dropdown ul{
 header nav ul li.menu-dropdown:hover > ul {
     display:flex;
 }
+
+header nav ul li.menu-dropdown:active > ul {
+    display:flex;
+}
