@@ -1,13 +1,54 @@
+header{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
 body{
     background-color: #e3adbd;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
     font-weight: bold;
-}
-
-legend {
-    color: white;
-}
-p {
     color: white;
 }
 
+h1 { font-size: 150
+    color: white; font-weight: bold 
+}
+
+.LL3{
+        background-color: #953131;
+        font-family: 'Times New Roman', Times, serif;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    margin: 10px auto auto 50%;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+header nav ul li.menu-dropdown ul{
+    display: none;
+    position: absolute;
+    margin-left: -8%;
+}
+
+header nav ul li.menu-dropdown:hover > ul {
+    display:flex;
+}
