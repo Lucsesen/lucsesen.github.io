@@ -203,4 +203,40 @@ body {
     .stroke:nth-child(7){
         animation-delay: 0s;
     }
+
+header nav{
+    display: flex;
+    align-items: center;
+    margin: 10px auto auto 50%;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+header nav ul li.menu-dropdown ul{
+    display: none;
+    position: absolute;
+    margin-left: -9%;
+}
+
+header nav ul li.menu-dropdown:hover > ul {
+    display:flex;
+}
+
+header nav ul li.menu-dropdown:active > ul {
+    display:flex;
+}
     
