@@ -43,7 +43,7 @@ const music_list = [
         img : 'images/4.jpg',
         name : 'Yellow',
         artist : 'Coldplay',
-        music : 'music/yellow.mp3'
+        music : 'music/Yellow.mp3'
     },
     {
         img : 'images/5.jpg',
@@ -61,7 +61,7 @@ const music_list = [
         img : 'images/7.jpg',
         name : 'Idiota',
         artist : 'Jão',
-        music : 'music/idiota.mp3'
+        music : 'music/Idiota.mp3'
     },
     
 ];
